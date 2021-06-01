@@ -18,8 +18,13 @@ I have added [p10k](https://github.com/romkatv/powerlevel10k) for my colorscheme
 
 I am going with Neovim nightly, as it has treesitter and lsp. I prefer Neovim over Vim as it has lua support and has a more precise scope for its users.
 
+# Plugin Package Manager
+
+In the past I have used [vim-plug](https://github.com/junegunn/vim-plug), which has worked great, but I decided to experiment with [packer](https://github.com/wbthomason/packer.nvim) due to it being written in Lua and its robust feature set.
+
 ## Todos
 
 [] Research kittens for kitty
 [] Research plugins for Oh My Zsh
 [] Deep dive ln
+[] Deep dive Makefile
