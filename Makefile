@@ -1,4 +1,5 @@
 dotfiles = ./dotfiles
+vim_files = ./.config
 install_kitty:
 	curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
@@ -11,3 +12,11 @@ link_dotfiles: $(dotfiles)/.[!.]*
 	        rm -rf ~/`basename $${file}` ;\
 		ln -s $(shell pwd)/$${file} ~/`basename $${file}` ;\
 	done
+
+link_vim_files: $(vim_files)/**/*
+	mkdir -p ~/.config/nvim;\
+	for file in $^; do \
+		echo $${file}; \
+		ln -s $(shell pwd)/$${file} ~/$${file} ;\
+	done
+
