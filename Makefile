@@ -13,10 +13,9 @@ link_dotfiles: $(dotfiles)/.[!.]*
 		ln -s $(shell pwd)/$${file} ~/`basename $${file}` ;\
 	done
 
-link_vim_files: $(vim_files)/**/*
+link_vim_files: $(vim_files)/**/**/*
 	mkdir -p ~/.config/nvim;\
 	for file in $^; do \
 		echo $${file}; \
 		ln -s $(shell pwd)/$${file} ~/$${file} ;\
 	done
-
