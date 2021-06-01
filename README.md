@@ -10,6 +10,10 @@ While traditionally I have used [iTerm2](https://iterm2.com/) as my terminal, I 
 
 I have gone with Zsh and specifically [Oh My Zsh](https://ohmyz.sh/). I looked into [Fish](https://fishshell.com/), however decided to stick with Zsh as it comes with Mac out of the box.
 
+# Shell Colors
+
+I have added [p10k](https://github.com/romkatv/powerlevel10k) for my colorscheme. I enjoyed it configuration wizard so I didn't have to mess with getting it just right now for.
+
 ## Todos
 
 [] Research kittens for kitty
