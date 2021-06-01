@@ -5,6 +5,19 @@
         "version": "1.14.6",
         "bottle": false
       }
+    },
+    "tap": {
+      "jason0x43/neovim-nightly": {
+        "revision": "c5a605b018c05d08b90c4b794c088d25736997c3"
+      }
+    },
+    "cask": {
+      "neovim-nightly": {
+        "version": "latest",
+        "options": {
+          "full_name": "neovim-nightly"
+        }
+      }
     }
   },
   "system": {

@@ -14,7 +14,12 @@ I have gone with Zsh and specifically [Oh My Zsh](https://ohmyz.sh/). I looked i
 
 I have added [p10k](https://github.com/romkatv/powerlevel10k) for my colorscheme. I enjoyed it configuration wizard so I didn't have to mess with getting it just right now for.
 
+# Text Editor
+
+I am going with Neovim nightly, as it has treesitter and lsp. I prefer Neovim over Vim as it has lua support and has a more precise scope for its users.
+
 ## Todos
 
 [] Research kittens for kitty
 [] Research plugins for Oh My Zsh
+[] Deep dive ln
