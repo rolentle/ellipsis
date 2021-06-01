@@ -1,0 +1,22 @@
+{
+  "entries": {
+    "brew": {
+      "romkatv/powerlevel10k/powerlevel10k": {
+        "version": "1.14.6",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "3.1.9",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "46e366b11b46114c41cd05c023dea03c36db4261",
+        "CLT": "12.0.0.32.29",
+        "Xcode": "12.4",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}
