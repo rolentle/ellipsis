@@ -1,5 +1,4 @@
 dotfiles = ./dotfiles
-vim_files = ./config
 install_kitty:
 	curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
@@ -13,5 +12,5 @@ link_dotfiles: $(dotfiles)/*
 		ln -sF $(shell pwd)/$${file} ~/.`basename $${file}` ;\
 	done
 
-link_vim_files: $(vim_files)/**/**/*
+link_config:
 	ln -s $(shell pwd)/config ~/.config
