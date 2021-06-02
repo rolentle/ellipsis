@@ -9,7 +9,9 @@ end
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 require("plugins")
 
+vim.o.termguicolors = true
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
-vim.cmd [[syntax on]]
-vim.cmd([[set termguicolors]])
+
+-- map telescope to crtl+p
+vim.api.nvim_set_keymap('', '<C-p>', '<cmd>Telescope find_files<cr>', {})
