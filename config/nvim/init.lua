@@ -56,3 +56,5 @@ vim.cmd([[colorscheme gruvbox]])
 
 -- map telescope to crtl+p
 vim.api.nvim_set_keymap('', '<C-p>', '<cmd>Telescope find_files<cr>', {noremap=true})
+-- add github to telescope
+require('telescope').load_extension('gh')
