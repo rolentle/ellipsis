@@ -58,3 +58,8 @@ vim.cmd([[colorscheme gruvbox]])
 vim.api.nvim_set_keymap('', '<C-p>', '<cmd>Telescope find_files<cr>', {noremap=true})
 -- add github to telescope
 require('telescope').load_extension('gh')
+
+require'nvim-treesitter.configs'.setup({
+  highlight = { enable = true },
+  indent = { enable = true }
+})
