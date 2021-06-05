@@ -4,3 +4,4 @@ tap "jason0x43/homebrew-neovim-nightly"
 cask "neovim-nightly"
 
 brew "gh"
+brew "ripgrep"
