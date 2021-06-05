@@ -17,4 +17,9 @@ use {
     -- some optional icons
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
+  --allow mass commenting
+  use 'tpope/vim-commentary'
+
+  use 'kyazdani42/nvim-tree.lua'
+  use 'tpope/vim-rails'
 end)

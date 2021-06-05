@@ -71,6 +71,10 @@ end
 time("try_loadstring definition", false)
 time("Defining packer_plugins", true)
 _G.packer_plugins = {
+  ["galaxyline.nvim"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
@@ -79,9 +83,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -106,6 +118,14 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rails"
   }
 }
 
