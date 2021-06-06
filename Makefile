@@ -5,6 +5,9 @@ install_kitty:
 install_oh_my_zsh:
 	curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 
+install_ruby_lsp:
+	gem install --user-install solargraph
+
 link_dotfiles: $(dotfiles)/*
 	for file in $^; do \
 		echo `basename $${file}`; \

@@ -22,4 +22,13 @@ use {
 
   use 'kyazdani42/nvim-tree.lua'
   use 'tpope/vim-rails'
+
+  -- lsp and completion
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-lua/completion-nvim'
+  use 'steelsojka/completion-buffers'
+  use 'kristijanhusak/completion-tags'
+  
+  --snippets
+  use { 'SirVer/ultisnips', require = {'honza/vim-snippets'} }
 end)

@@ -66,3 +66,22 @@ require'nvim-treesitter.configs'.setup({
   highlight = { enable = true },
   indent = { enable = true }
 })
+
+--ruby lsp
+require'lspconfig'.solargraph.setup{on_attach=require('completion').on_attach}
+
+-- nvim-lua/completion-nvim recommended setting
+-- Use <Tab> and <S-Tab> to navigate through popup menu
+vim.api.nvim_set_keymap( 'i', '<expr> <Tab>', 'pumvisible() ? "<C-n>" : "<Tab>"', {noremap=true})
+vim.api.nvim_set_keymap('i','<expr> <S-Tab>', ':pumvisible() ? "<C-p>" : "<S-Tab>"',{noremap=true})
+vim.g.completion_enable_auto_popup = 0
+vim.api.nvim_set_keymap('i','<tab>', '<Plug>(completion_smart_tab)',{})
+-- Set completeopt to have a better completion experience
+vim.g.completeopt='menuone,noinsert,noselect'
+--Avoid showing message extra message when using completion
+vim.cmd('set shortmess+=c')
+
+vim.cmd("let g:completion_chain_complete_list = [{'complete_items': [ 'buffers', 'snippet', 'lsp', 'tags']},{'mode': '<c-p>'}, {'mode': '<c-n>'}]")
+
+vim.g.completion_enable_snippet = 'UltiSnips'
+vim.g.UltiSnipsExpandTrigger="<leader><Tab>"
