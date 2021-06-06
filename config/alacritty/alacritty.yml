@@ -7,6 +7,9 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
 
+shell:
+  program: /usr/local/bin/zsh
+
 font:
   normal:
     family: MesloLGS NF

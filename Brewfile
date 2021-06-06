@@ -9,3 +9,5 @@ cask "alacritty"
 
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
+
+brew "tmux"
