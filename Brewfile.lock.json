@@ -72,6 +72,9 @@
     "tap": {
       "jason0x43/neovim-nightly": {
         "revision": "c5a605b018c05d08b90c4b794c088d25736997c3"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "af8502291c75cb4bd738bb3cd563898ccf4e627a"
       }
     },
     "cask": {
@@ -79,6 +82,18 @@
         "version": "latest",
         "options": {
           "full_name": "neovim-nightly"
+        }
+      },
+      "alacritty": {
+        "version": "0.8.0",
+        "options": {
+          "full_name": "alacritty"
+        }
+      },
+      "font-hack-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "font-hack-nerd-font"
         }
       }
     }
@@ -88,7 +103,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "3.1.9",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "2d317ef8a1818e8186dba17e349f110c0778089a",
+        "Homebrew/homebrew-core": "053991e1213350e1803bdb6c7c5aca7a36e8e3d0",
         "CLT": "12.0.0.32.29",
         "Xcode": "12.4",
         "macOS": "10.15.7"

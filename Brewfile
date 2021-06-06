@@ -5,4 +5,7 @@ cask "neovim-nightly"
 
 brew "gh"
 brew "ripgrep"
-brew "alacritty"
+cask "alacritty"
+
+tap "homebrew/cask-fonts"
+cask "font-hack-nerd-font"
