@@ -33,3 +33,5 @@ In the past I have used [vim-plug](https://github.com/junegunn/vim-plug), which 
 [] Deep dive Makefile
 
 [] Deep LSP/Completion
+
+[] Deep dive galaxyline
