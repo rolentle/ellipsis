@@ -54,8 +54,12 @@ vim.o.termguicolors = true
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
 
+-- telescope shortcuts
 -- map telescope to crtl+p
 vim.api.nvim_set_keymap('', '<C-p>', '<cmd>Telescope find_files<cr>', {noremap=true})
+vim.api.nvim_set_keymap('', '<leader>ff', '<cmd>Telescope find_files<cr>', {noremap=true})
+vim.api.nvim_set_keymap('', '<leader>gst', '<cmd>Telescope git_status<cr>', {noremap=true})
+
 
 --map leader a to grep selected word
 vim.api.nvim_set_keymap('n', '<leader>a', '<cmd>lua require(\'telescope.builtin\').grep_string()<cr>',{noremap=true})
