@@ -73,7 +73,27 @@ require'lspconfig'.solargraph.setup{on_attach=require('completion').on_attach}
 -- nvim-lua/completion-nvim recommended setting
 -- Use <Tab> and <S-Tab> to navigate through popup menu
 vim.api.nvim_set_keymap( 'i', '<expr> <Tab>', 'pumvisible() ? "<C-n>" : "<Tab>"', {noremap=true})
-vim.api.nvim_set_keymap('i','<expr> <S-Tab>', ':pumvisible() ? "<C-p>" : "<S-Tab>"',{noremap=true})
+
+-- The function is called `t` for `termcodes`.
+-- You don't have to call it that, but I find the terseness convenient
+-- TODO figure out how this works
+-- Research :keycodes, expr-quote, nvim_replace_termcodes
+local function t(str)
+    return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
+function _G.smart_tab()
+    return fn.pumvisible() == 1 and t'<C-n>' or t'<Tab>'
+end
+
+function _G.smart_s_tab()
+    return fn.pumvisible() == 1 and t'<C-p>' or t'<S-Tab>'
+end
+
+-- TODO research what v:luia does
+vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap})
+vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.smart_s_tab()', {expr = true, noremap})
+
 vim.g.completion_enable_auto_popup = 0
 vim.api.nvim_set_keymap('i','<tab>', '<Plug>(completion_smart_tab)',{})
 -- Set completeopt to have a better completion experience
