@@ -17,4 +17,4 @@ link_dotfiles: $(dotfiles)/*
 	done
 
 link_config:
-	ln -s $(shell pwd)/config ~/.config
+	ln -sF $(shell pwd)/config ~/.config
