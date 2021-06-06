@@ -3,9 +3,6 @@ dotfiles = ./dotfiles
 update_neovim:
 	brew upgrade neovim-nightly
 
-install_kitty:
-	curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-
 install_oh_my_zsh:
 	curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 

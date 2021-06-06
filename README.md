@@ -4,7 +4,9 @@ What is ellipsis...? Ellipsis is fourth iteration of my dotfiles and explanation
 
 ## Terminals
 
-While traditionally I have used [iTerm2](https://iterm2.com/) as my terminal, I am now experimenting with [kitty](https://sw.kovidgoyal.net/kitty/#) due to its [kittens](https://sw.kovidgoyal.net/kitty/#kittens) framework.
+--While traditionally I have used [iTerm2](https://iterm2.com/) as my terminal, I am now experimenting with [kitty](https://sw.kovidgoyal.net/kitty/#) due to its [kittens](https://sw.kovidgoyal.net/kitty/#kittens) framework.--
+
+After further digging, kitty actively chooses not work with tmux which is dissapointing,[see here](https://sw.kovidgoyal.net/kitty/faq.html#i-am-using-tmux-and-have-a-problem). They may have valid points, however I am not yet willing to get rid of my workflow for those reasons. I am now switching to [Alacritty](https://github.com/alacritty/alacritty).
 
 ## Shell
 
@@ -24,7 +26,7 @@ In the past I have used [vim-plug](https://github.com/junegunn/vim-plug), which 
 
 ## Todos
 
-[] Research kittens for kitty
 [] Research plugins for Oh My Zsh
 [] Deep dive ln
 [] Deep dive Makefile
+[] Deep LSP/Completion

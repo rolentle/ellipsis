@@ -5,3 +5,4 @@ cask "neovim-nightly"
 
 brew "gh"
 brew "ripgrep"
+brew "alacritty"
