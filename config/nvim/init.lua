@@ -91,8 +91,8 @@ function _G.smart_s_tab()
 end
 
 -- TODO research what v:luia does
-vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap})
-vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.smart_s_tab()', {expr = true, noremap})
+vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
+vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.smart_s_tab()', {expr = true, noremap = true})
 
 vim.g.completion_enable_auto_popup = 0
 vim.api.nvim_set_keymap('i','<tab>', '<Plug>(completion_smart_tab)',{})
