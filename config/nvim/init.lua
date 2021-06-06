@@ -105,3 +105,5 @@ vim.cmd("let g:completion_chain_complete_list = [{'complete_items': [ 'buffers',
 
 vim.g.completion_enable_snippet = 'UltiSnips'
 vim.g.UltiSnipsExpandTrigger="<leader><Tab>"
+
+vim.api.nvim_set_keymap('', '<leader>n', '<cmd>NvimTreeToggle<cr>', {noremap = true})
