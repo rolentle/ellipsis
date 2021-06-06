@@ -69,7 +69,6 @@ end
 
 vim.api.nvim_set_keymap('', '<leader>fd', '<cmd>lua find_dotfiles()<cr>', {noremap=true})
 
-
 --map leader a to grep selected word
 vim.api.nvim_set_keymap('n', '<leader>a', '<cmd>lua require(\'telescope.builtin\').grep_string()<cr>',{noremap=true})
 -- add github to telescope
