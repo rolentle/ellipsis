@@ -6,6 +6,7 @@ return require("packer").startup(function()
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
     }
     use 'nvim-telescope/telescope-github.nvim'
+    use 'fhill2/telescope-ultisnips.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/playground'
 
@@ -31,5 +32,6 @@ return require("packer").startup(function()
     use 'kristijanhusak/completion-tags'
 
     --snippets
-    use { 'SirVer/ultisnips', require = {'honza/vim-snippets'} }
+    use 'SirVer/ultisnips'
+    use 'honza/vim-snippets'
 end)

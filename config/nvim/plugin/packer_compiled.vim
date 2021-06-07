@@ -83,10 +83,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/completion-tags"
   },
-  ["galaxyline.nvim"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
@@ -106,10 +102,6 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -131,6 +123,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/telescope-github.nvim"
   },
+  ["telescope-ultisnips.nvim"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/telescope-ultisnips.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/telescope.nvim"
@@ -146,6 +142,10 @@ _G.packer_plugins = {
   ["vim-rails"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rails"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-snippets"
   }
 }
 
