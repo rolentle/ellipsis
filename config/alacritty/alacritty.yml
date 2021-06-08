@@ -20,6 +20,8 @@ font:
     family: MesloLGS NF
     style: Italic
 
+  size: 17
+
 # Colors (Gruvbox dark)
 colors:
   # Default colors
