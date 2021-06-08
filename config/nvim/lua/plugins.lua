@@ -32,7 +32,6 @@ return require("packer").startup(function()
     use 'tpope/vim-commentary'
 
     use 'kyazdani42/nvim-tree.lua'
-    use 'tpope/vim-rails'
 
     -- lsp and completion
     use 'neovim/nvim-lspconfig'
@@ -43,4 +42,45 @@ return require("packer").startup(function()
     --snippets
     use 'SirVer/ultisnips'
     use 'honza/vim-snippets'
+
+-- ruby plugins
+    use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
+    use 'tpope/vim-bundler'
+    use 'tpope/vim-rails'
+    use 'tpope/vim-rake'
+    use 'thoughtbot/vim-rspec' --TODO rewrite in lua w/minitest
+    use 'vim-ruby/vim-ruby'
+    -- use 'nelstrom/vim-textobj-rubyblock' broken adn TODO rewrite in treesitter
+
+-- "sql plugins
+-- Plug 'exu/pgsql.vim'
+-- Plug 'tpope/vim-dadbod'
+
+-- "formating plugins
+-- Plug 'AndrewRadev/splitjoin.vim' TODO rewrite with Tree Sitter
+   use 'godlygeek/tabular'
+-- Plug 'rondale-sc/vim-spacejam'
+-- Plug 'tpope/vim-sleuth'
+-- Plug 'tpope/vim-surround'
+-- " staticly check code and highlight errors (async syntastic replacement)
+-- Plug 'w0rp/ale'
+
+-- "tmux plugins
+-- Plug 'jgdavey/tslime.vim'
+-- Plug 'tpope/vim-dispatch'
+
+-- "misc plugins
+-- Plug 'tpope/vim-abolish'
+-- Plug 'tpope/vim-endwise'
+-- Plug 'tpope/vim-eunuch'
+-- Plug 'leshill/vim-json'
+-- Plug 'tpope/vim-markdown'
+-- Plug 'tpope/vim-ragtag'
+-- Plug 'kana/vim-textobj-user'
+-- Plug 'tpope/vim-unimpaired'
+
+-- "git plugins
+-- Plug 'tpope/vim-fugitive'
+-- Plug 'tpope/vim-git'
+-- Plug 'tpope/vim-repeat'
 end)
