@@ -22,10 +22,10 @@ vim.o.hidden = true
 --create column 72 characters out of different color
 vim.g.colorcolumn = 72
 
---tab indents 4 characters
-vim.o.tabstop = 4
---auto indents 4 characters
-vim.o.shiftwidth = 4
+--tab indents 2 characters
+vim.o.tabstop = 2
+--auto indents 2 characters
+vim.o.shiftwidth = 2
 --converts tab into spaces
 vim.o.expandtab = true
 
