@@ -62,8 +62,9 @@ time("try_loadstring definition", true)
 local function try_loadstring(s, component, name)
   local success, result = pcall(loadstring(s))
   if not success then
-    print('Error running ' .. component .. ' for ' .. name)
-    error(result)
+    vim.schedule(function()
+      vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
+    end)
   end
   return result
 end
@@ -143,41 +144,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/ultisnips"
   },
-  ["vim-blockle"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-blockle"
-  },
-  ["vim-bundler"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-bundler"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
-  ["vim-rails"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rails"
-  },
-  ["vim-rake"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rake"
-  },
-  ["vim-rspec"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rspec"
-  },
-  ["vim-ruby"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-ruby"
-  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-snippets"
-  },
-  ["vim-textobj-rubyblock"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-textobj-rubyblock"
   }
 }
 

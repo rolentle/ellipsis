@@ -45,13 +45,12 @@ return require("packer").startup(function()
     use 'honza/vim-snippets'
 
 -- ruby plugins
-    use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
+    -- use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
+    -- use 'thoughtbot/vim-rspec' --TODO rewrite in lua w/minitest
     use 'tpope/vim-bundler'
     use 'tpope/vim-rails'
     use 'tpope/vim-rake'
-    use 'thoughtbot/vim-rspec' --TODO rewrite in lua w/minitest
     use 'vim-ruby/vim-ruby'
-    -- use 'nelstrom/vim-textobj-rubyblock' broken adn TODO rewrite in treesitter
 
 -- "sql plugins
 -- Plug 'exu/pgsql.vim'
