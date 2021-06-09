@@ -35,6 +35,6 @@ vim.cmd('set shortmess+=c')
 vim.cmd("let g:completion_chain_complete_list = [{'complete_items': [ 'buffers', 'snippet', 'lsp', 'tags']},{'mode': '<c-p>'}, {'mode': '<c-n>'}]")
 
 vim.g.completion_enable_snippet = 'UltiSnips'
-vim.g.UltiSnipsExpandTrigger="<leader><Tab>"
+vim.g.UltiSnipsExpandTrigger="<M-Tab>"
 
 vim.api.nvim_set_keymap('', '<leader>n', '<cmd>NvimTreeToggle<cr>', {noremap = true})
