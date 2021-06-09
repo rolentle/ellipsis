@@ -49,8 +49,23 @@ vim.cmd([[colorscheme gruvbox]])
 
 
 require'nvim-treesitter.configs'.setup({
-  highlight = { enable = true },
-  indent = { enable = true }
+    highlight = { enable = true },
+    indent = { enable = true },
+    textobjects = {
+        select = {
+            enable = true,
+            keymaps = {
+                -- You can use the capture groups defined in textobjects.scm
+                ["af"] = "@function.outer",
+                ["if"] = "@function.inner",
+                ["ac"] = "@class.outer",
+                ["aC"] = "@conditional.outer",
+                ["al"] = "@loop.outer",
+                ["aL"] = "@call.outer",
+                ["ab"] = "@block.outer",
+            }
+        }
+    }
 })
 
 require("ellipsis.lsp_config")

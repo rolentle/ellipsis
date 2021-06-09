@@ -18,6 +18,7 @@ return require("packer").startup(function()
     use 'fhill2/telescope-ultisnips.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/playground'
+    use 'nvim-treesitter/nvim-treesitter-textobjects'
 
     -- holding off to a deeper dive
     -- use {
