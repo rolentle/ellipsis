@@ -1,7 +1,7 @@
 dotfiles = ./dotfiles
 
 install_homebrew:
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 update_neovim:
 	brew upgrade neovim-nightly
@@ -15,9 +15,9 @@ install_ruby_lsp:
 link_dotfiles: $(dotfiles)/*
 	for file in $^; do \
 		echo `basename $${file}`; \
-	        rm -rf ~/.`basename $${file}` ;\
+		rm -rf ~/.`basename $${file}` ;\
 		ln -sF $(shell pwd)/$${file} ~/.`basename $${file}` ;\
-	done
+		done
 
 link_config:
 	ln -sF $(shell pwd)/config ~/.config
