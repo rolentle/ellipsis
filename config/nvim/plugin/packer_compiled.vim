@@ -144,9 +144,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/ultisnips"
   },
+  ["vim-bundler"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-bundler"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rails"
+  },
+  ["vim-rake"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rake"
   },
   ["vim-snippets"] = {
     loaded = true,
