@@ -84,6 +84,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/completion-tags"
   },
+  ["galaxyline.nvim"] = {
+    config = { "\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24ellipsis.statusline\frequire\0" },
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
@@ -107,6 +112,10 @@ _G.packer_plugins = {
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -167,6 +176,10 @@ _G.packer_plugins = {
 }
 
 time("Defining packer_plugins", false)
+-- Config for: galaxyline.nvim
+time("Config for galaxyline.nvim", true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24ellipsis.statusline\frequire\0", "config", "galaxyline.nvim")
+time("Config for galaxyline.nvim", false)
 if should_profile then save_profiles() end
 
 END

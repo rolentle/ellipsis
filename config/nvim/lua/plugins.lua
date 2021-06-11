@@ -20,15 +20,12 @@ return require("packer").startup(function()
     use 'nvim-treesitter/playground'
     use 'nvim-treesitter/nvim-treesitter-textobjects'
 
-    -- holding off to a deeper dive
-    -- use {
-    --     'glepnir/galaxyline.nvim',
-    --     branch = 'main',
-    --     -- your statusline
-    --     -- config = function() require'my_statusline' end,
-    --     -- some optional icons
-    --     requires = {'kyazdani42/nvim-web-devicons', opt = true}
-    -- }
+    use {
+        'glepnir/galaxyline.nvim',
+        branch = 'main',
+        config = function() require('ellipsis.statusline') end,
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
     --allow mass commenting
     use 'tpope/vim-commentary'
 
