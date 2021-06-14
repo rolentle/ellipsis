@@ -29,6 +29,13 @@ galaxyline.section.left[1] = {
 }
 
 galaxyline.section.left[2] = {
+  GitBranch = {
+    provider = vcs.get_git_branch,
+    separator = ' ',
+  }
+}
+
+galaxyline.section.left[3] = {
   FileIcon = {
     provider = fileinfo.get_file_icon,
     highlight = {fileinfo.get_file_icon_color},
@@ -36,7 +43,7 @@ galaxyline.section.left[2] = {
   }
 }
 
-galaxyline.section.left[3] = {
+galaxyline.section.left[4] = {
   FileName = {
     provider = fileinfo.get_current_file_name,
   }
