@@ -3,3 +3,6 @@
 [user]
 	email = rolentle@gmail.com
 	name = "Rolen T. Le"
+
+[core]
+  editor = nvim
