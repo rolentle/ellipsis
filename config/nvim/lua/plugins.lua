@@ -76,8 +76,8 @@ return require("packer").startup(function()
 -- Plug 'kana/vim-textobj-user'
 -- Plug 'tpope/vim-unimpaired'
 
--- "git plugins
--- Plug 'tpope/vim-fugitive'
+-- git plugins
+   use 'tpope/vim-fugitive'
 -- Plug 'tpope/vim-git'
 -- Plug 'tpope/vim-repeat'
 end)
