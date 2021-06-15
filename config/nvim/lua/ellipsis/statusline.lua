@@ -7,7 +7,7 @@ background = gruvbox.GruvboxFg1.fg.hex
 
 galaxyline.short_line_list = { 'NvimTree', 'fugitive' }
 
-galaxyline.section.left[1] = {
+local vi_mode = {
   ViMode = {
     provider = function()
       local alias = {
@@ -28,14 +28,14 @@ galaxyline.section.left[1] = {
   }
 }
 
-galaxyline.section.left[2] = {
+local git_branch = {
   GitBranch = {
     provider = vcs.get_git_branch,
     separator = ' ',
   }
 }
 
-galaxyline.section.left[3] = {
+local file_icon = {
   FileIcon = {
     provider = fileinfo.get_file_icon,
     highlight = {fileinfo.get_file_icon_color},
@@ -43,8 +43,14 @@ galaxyline.section.left[3] = {
   }
 }
 
-galaxyline.section.left[4] = {
+file_name = {
   FileName = {
     provider = fileinfo.get_current_file_name,
   }
 }
+
+left_sections = {vi_mode, git_branch, file_icon, file_name}
+
+for index, section in ipairs(left_sections) do
+  galaxyline.section.left[index] = section
+end
