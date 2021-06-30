@@ -21,3 +21,6 @@ link_dotfiles: $(dotfiles)/*
 
 link_config:
 	ln -sF $(shell pwd)/config ~/.config
+
+link_hammerspoon:
+	ln -sF $(shell pwd)/.hammerspoon ~/.hammerspoon

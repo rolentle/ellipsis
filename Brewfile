@@ -13,3 +13,5 @@ cask "font-hack-nerd-font"
 brew "tmux"
 
 brew "luarocks"
+
+cask "hammerspoon"
