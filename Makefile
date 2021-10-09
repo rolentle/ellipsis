@@ -4,7 +4,7 @@ install_homebrew:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 update_neovim:
-	brew upgrade neovim-nightly
+	brew upgrade neovim
 
 install_oh_my_zsh:
 	curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
