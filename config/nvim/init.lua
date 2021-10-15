@@ -74,3 +74,4 @@ function _G.dump(...)
 end
 
 vim.g.vimwiki_list = { {['path'] = '~/rolens_notes/', ['syntax'] = 'markdown', ['ext'] = '.md'}}
+vim.api.nvim_set_keymap('', '<leader>n', '<cmd>NvimTreeToggle<cr>', {noremap = true})

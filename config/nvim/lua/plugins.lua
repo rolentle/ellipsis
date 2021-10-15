@@ -35,15 +35,17 @@ return require("packer").startup(function()
         config = function() require'nvim-tree'.setup {} end
      }
 
-    -- lsp and completion
+    -- lsp and nvim-cmp
     use 'neovim/nvim-lspconfig'
-    use 'nvim-lua/completion-nvim'
-    use 'steelsojka/completion-buffers'
-    use 'kristijanhusak/completion-tags'
+    use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/nvim-cmp'
 
     --snippets
     use 'SirVer/ultisnips'
     use 'honza/vim-snippets'
+    use 'quangnguyen30192/cmp-nvim-ultisnips'
 
 -- ruby plugins
     -- use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
