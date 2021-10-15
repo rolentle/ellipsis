@@ -178,6 +178,10 @@ _G.packer_plugins = {
   ["vim-snippets"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-snippets"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vimwiki"
   }
 }
 

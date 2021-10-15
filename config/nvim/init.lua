@@ -72,3 +72,5 @@ function _G.dump(...)
     local objects = vim.tbl_map(vim.inspect, {...})
     print(unpack(objects))
 end
+
+vim.g.vimwiki_list = { {['path'] = '~/rolens_notes/', ['syntax'] = 'markdown', ['ext'] = '.md'}}

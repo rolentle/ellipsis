@@ -86,4 +86,5 @@ return require("packer").startup(function()
 -- Plug 'tpope/vim-repeat'
 
   use 'editorconfig/editorconfig-vim'
+  use 'vimwiki/vimwiki'
 end)
