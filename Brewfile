@@ -5,6 +5,8 @@ brew "gh"
 brew "ripgrep"
 cask "alacritty"
 
+brew "rust-analyzer"
+
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
 
