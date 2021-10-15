@@ -64,7 +64,7 @@ return require("packer").startup(function()
    use 'godlygeek/tabular'
 -- Plug 'rondale-sc/vim-spacejam'
 -- Plug 'tpope/vim-sleuth'
--- Plug 'tpope/vim-surround'
+   use 'tpope/vim-surround'
 -- " staticly check code and highlight errors (async syntastic replacement)
 -- Plug 'w0rp/ale'
 
