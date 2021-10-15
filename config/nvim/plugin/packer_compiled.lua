@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/completion-tags"
   },
+  ["editorconfig-vim"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/editorconfig-vim"
+  },
   ["galaxyline.nvim"] = {
     config = { "\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24ellipsis.statusline\frequire\0" },
     loaded = true,

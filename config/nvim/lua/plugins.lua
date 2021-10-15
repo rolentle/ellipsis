@@ -84,4 +84,6 @@ return require("packer").startup(function()
    use 'tpope/vim-fugitive'
 -- Plug 'tpope/vim-git'
 -- Plug 'tpope/vim-repeat'
+
+  use 'editorconfig/editorconfig-vim'
 end)
