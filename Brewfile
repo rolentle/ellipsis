@@ -3,6 +3,8 @@ brew "neovim"
 
 brew "gh"
 brew "ripgrep"
+brew "node"
+brew "python"
 cask "alacritty"
 
 brew "rust-analyzer"
