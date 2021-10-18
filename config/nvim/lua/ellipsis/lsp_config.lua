@@ -32,7 +32,7 @@ cmp.setup({
     -- { name = 'luasnip' },
 
     -- For ultisnips user.
-    { name = 'ultisnips' },
+    { name = 'UltiSnips' },
 
     { name = 'buffer' },
   }
