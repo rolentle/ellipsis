@@ -3,6 +3,7 @@ brew "neovim"
 
 brew "gh"
 brew "ripgrep"
+brew "fd"
 brew "node"
 brew "python"
 cask "alacritty"
