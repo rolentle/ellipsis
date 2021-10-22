@@ -43,7 +43,10 @@ nvim_lsp.solargraph.setup{
   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
+--sorbet lspconfig
+require'lspconfig'.sorbet.setup{}
 
+-- rust lsp
 local on_attach = function(client)
     require'completion'.on_attach(client)
 end

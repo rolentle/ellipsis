@@ -183,6 +183,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-snippets"
   },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
   vimwiki = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vimwiki"
