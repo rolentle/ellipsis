@@ -35,6 +35,7 @@ cmp.setup({
     { name = 'UltiSnips' },
 
     { name = 'buffer' },
+    { name = 'path' },
   }
 })
 --ruby lsp
