@@ -88,6 +88,9 @@ return require("packer").startup(function()
 -- Plug 'tpope/vim-git'
 -- Plug 'tpope/vim-repeat'
 
+-- solidity
+  use 'tomlion/vim-solidity'
+
   use 'editorconfig/editorconfig-vim'
   use 'vimwiki/vimwiki'
 end)
