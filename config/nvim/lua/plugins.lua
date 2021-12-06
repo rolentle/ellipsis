@@ -18,7 +18,7 @@ return require("packer").startup(function()
     use 'fhill2/telescope-ultisnips.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/playground'
-    use 'nvim-treesitter/nvim-treesitter-textobjects'
+    -- use 'nvim-treesitter/nvim-treesitter-textobjects'
 
     use {
         'glepnir/galaxyline.nvim',
@@ -37,7 +37,6 @@ return require("packer").startup(function()
 
     -- lsp and nvim-cmp
     use 'neovim/nvim-lspconfig'
-    use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
@@ -51,7 +50,7 @@ return require("packer").startup(function()
 -- ruby plugins
     -- use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
     -- use 'thoughtbot/vim-rspec' --TODO rewrite in lua w/minitest
-    -- use 'vim-ruby/vim-ruby' -- TODO ensure treesitter can do this
+    use 'vim-ruby/vim-ruby' -- TODO ensure treesitter can do this
     use 'tpope/vim-bundler'
     use 'tpope/vim-rails'
     use 'tpope/vim-rake'
@@ -85,7 +84,7 @@ return require("packer").startup(function()
 
 -- git plugins
    use 'tpope/vim-fugitive'
--- Plug 'tpope/vim-git'
+   use 'tpope/vim-git'
 -- Plug 'tpope/vim-repeat'
 
 -- solidity

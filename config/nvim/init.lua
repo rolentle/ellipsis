@@ -29,6 +29,8 @@ vim.o.shiftwidth = 2
 --converts tab into spaces
 vim.o.expandtab = true
 
+vim.cmd[[syntax on]]
+
 -- turn terminal to normal mode with escape
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>',{noremap = true})
 
