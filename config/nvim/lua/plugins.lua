@@ -54,6 +54,7 @@ return require("packer").startup(function()
     use 'tpope/vim-bundler'
     use 'tpope/vim-rails'
     use 'tpope/vim-rake'
+    use 'ngmy/vim-rubocop'
 
 -- "sql plugins
 -- Plug 'exu/pgsql.vim'
@@ -92,4 +93,5 @@ return require("packer").startup(function()
 
   use 'editorconfig/editorconfig-vim'
   use 'vimwiki/vimwiki'
+  use 'elmcast/elm-vim'
 end)

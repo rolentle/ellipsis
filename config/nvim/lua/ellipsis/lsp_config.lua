@@ -41,11 +41,16 @@ cmp.setup({
 --ruby lsp
 local nvim_lsp = require'lspconfig'
 nvim_lsp.solargraph.setup{
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  autoformat = true,
+  diagnostics = true,
+  formatting = true,
+  loglevel = "debug",
+  useBundler = true
 }
 
 --sorbet lspconfig
-require'lspconfig'.sorbet.setup{}
+-- require'lspconfig'.sorbet.setup{}
 
 -- rust lsp
 nvim_lsp.rust_analyzer.setup({})
