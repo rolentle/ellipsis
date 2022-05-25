@@ -136,11 +136,6 @@ _G.packer_plugins = {
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-treesitter-textobjects"] = {
-    loaded = true,
-    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -220,6 +215,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-rake",
     url = "https://github.com/tpope/vim-rake"
+  },
+  ["vim-react-snippets"] = {
+    loaded = true,
+    path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
+    url = "https://github.com/mlaursen/vim-react-snippets"
   },
   ["vim-rubocop"] = {
     loaded = true,
