@@ -117,3 +117,4 @@ PATH="/Users/rolentle/.local/share/solana/install/active_release/bin:$PATH"
 if [[ $AWS_VAULT ]] ; then
   export PS1="%{$fg[red]%}AWS-VAULT%{$reset_color%}-%{$fg[blue]%}${AWS_VAULT}%{$reset_color%}:%~ $ "
 fi
+export PATH="/usr/local/opt/bison/bin:$PATH"

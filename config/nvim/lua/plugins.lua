@@ -46,6 +46,7 @@ return require("packer").startup(function()
     use 'SirVer/ultisnips'
     use 'honza/vim-snippets'
     use 'quangnguyen30192/cmp-nvim-ultisnips'
+    use 'mlaursen/vim-react-snippets'
 
 -- ruby plugins
     -- use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
