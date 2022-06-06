@@ -87,6 +87,7 @@ return require("packer").startup(function()
 -- git plugins
    use 'tpope/vim-fugitive'
    use 'tpope/vim-git'
+   use 'tpope/vim-rhubarb' -- For :Gbrowse
 -- Plug 'tpope/vim-repeat'
 
 -- solidity
