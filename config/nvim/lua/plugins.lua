@@ -9,7 +9,7 @@ end
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
-    use {"npxbr/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+    use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}

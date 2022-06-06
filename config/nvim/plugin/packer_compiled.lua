@@ -108,7 +108,7 @@ _G.packer_plugins = {
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/rolentle/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/npxbr/gruvbox.nvim"
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lush.nvim"] = {
     loaded = true,

@@ -3,8 +3,6 @@ local fileinfo = require('galaxyline.provider_fileinfo')
 local galaxyline = require('galaxyline')
 local gruvbox = require('gruvbox')
 
-background = gruvbox.GruvboxFg1.fg.hex
-
 galaxyline.short_line_list = { 'NvimTree', 'fugitive' }
 
 local vi_mode = {
