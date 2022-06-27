@@ -15,6 +15,7 @@ vim.api.nvim_set_keymap('', '<leader>fd', '<cmd>lua find_dotfiles()<cr>', {norem
 
 --map leader a to grep selected word
 vim.api.nvim_set_keymap('n', '<leader>a', '<cmd>lua require(\'telescope.builtin\').grep_string()<cr>',{noremap=true})
+vim.api.nvim_set_keymap('n', '<leader>lg', '<cmd>lua require(\'telescope.builtin\').live_grep()<cr>',{noremap=true})
 
 -- map tags
 vim.api.nvim_set_keymap('', '<leader>tag', '<cmd>lua require(\'telescope.builtin\').tags()<cr>',{noremap=true})
