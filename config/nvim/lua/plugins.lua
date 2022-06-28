@@ -50,7 +50,7 @@ return require("packer").startup(function()
 
 -- ruby plugins
     -- use 'jgdavey/vim-blockle' -- TODO rewrite in tree siter
-    -- use 'thoughtbot/vim-rspec' --TODO rewrite in lua w/minitest
+    use 'thoughtbot/vim-rspec'
     use 'vim-ruby/vim-ruby' -- TODO ensure treesitter can do this
     use 'tpope/vim-bundler'
     use 'tpope/vim-rails'
