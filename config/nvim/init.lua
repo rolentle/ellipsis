@@ -78,3 +78,7 @@ end
 vim.g.vimwiki_list = { {['path'] = '~/rolens_notes/', ['syntax'] = 'markdown', ['ext'] = '.md'}}
 vim.api.nvim_set_keymap('', '<leader>n', '<cmd>NvimTreeToggle<cr>', {noremap = true})
 vim.api.nvim_set_keymap('', '<leader>gh', '<cmd>GBrowse<cr>', {noremap = true})
+vim.api.nvim_set_keymap('', '<leader>t', '<cmd>call RunCurrentSpecFile()<cr>', {noremap = true})
+vim.api.nvim_set_keymap('', '<leader>T', '<cmd>call RunNearestSpec()<cr>', {noremap = true})
+vim.g.rspec_command= "!bin/drspec {spec}"
+

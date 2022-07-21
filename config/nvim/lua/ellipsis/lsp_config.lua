@@ -1,44 +1,46 @@
 vim.g.completeopt='menu,menuone,noselect'
 -- Setup nvim-cmp.
--- local cmp = require'cmp'
+local cmp = require'cmp'
 
--- cmp.setup({
---   snippet = {
---     expand = function(args)
---       -- For `vsnip` user.
---       -- vim.fn["vsnip#anonymous"](args.body)
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      -- For `vsnip` user.
+      -- vim.fn["vsnip#anonymous"](args.body)
 
---       -- For `luasnip` user.
---       -- require('luasnip').lsp_expand(args.body)
+      -- For `luasnip` user.
+      -- require('luasnip').lsp_expand(args.body)
 
---       -- For `ultisnips` user.
---       vim.fn["UltiSnips"](args.body)
---     end,
---   },
---   mapping = {
---     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
---     ['<C-f>'] = cmp.mapping.scroll_docs(4),
---     ['<C-Space>'] = cmp.mapping.complete(),
---     ['<C-e>'] = cmp.mapping.close(),
---     ['<CR>'] = cmp.mapping.confirm({ select = true }),
+      -- For `ultisnips` user.
+      vim.fn["UltiSnips"](args.body)
+    end,
+  },
+  window = {
+  },
+  mapping = {
+    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-e>'] = cmp.mapping.close(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
 
---   },
---   sources = {
---     { name = 'nvim_lsp' },
+  },
+  sources = {
+    { name = 'nvim_lsp' },
 
---     -- For vsnip user.
---     -- { name = 'vsnip' },
+    -- For vsnip user.
+    -- { name = 'vsnip' },
 
---     -- For luasnip user.
---     -- { name = 'luasnip' },
+    -- For luasnip user.
+    -- { name = 'luasnip' },
 
---     -- For ultisnips user.
---     { name = 'UltiSnips' },
+    -- For ultisnips user.
+    { name = 'UltiSnips' },
 
---     { name = 'buffer' },
---     { name = 'path' },
---   }
--- })
+    { name = 'buffer' },
+    { name = 'path' },
+  }
+})
 --ruby lsp
 local nvim_lsp = require'lspconfig'
 -- Mappings.
@@ -99,6 +101,10 @@ end
 -- require'lspconfig'.sorbet.setup{}
 
 -- rust lsp
-nvim_lsp.rust_analyzer.setup({})
+nvim_lsp.rust_analyzer.setup({
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+})
 
-nvim_lsp.elmls.setup({root_dir = require("lspconfig.util").root_pattern('hubtran/hubtran-web/client/elm/accounts-payable/elm.json')})
+nvim_lsp.elmls.setup({
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  root_dir = require("lspconfig.util").root_pattern('hubtran/hubtran-web/client/elm/accounts-payable/elm.json')})
