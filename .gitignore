@@ -1,3 +1,4 @@
 config/Battle\.net/**/*
 tags
 config/gh/**/*
+scripts/ht/**/*
