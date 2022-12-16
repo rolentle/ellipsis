@@ -103,7 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias tsh="tmuxinator start hubtran"
+alias bx="bundle exec"
+source ~/.secert_zshrc
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -119,3 +120,4 @@ if [[ $AWS_VAULT ]] ; then
   export PS1="%{$fg[red]%}AWS-VAULT%{$reset_color%}-%{$fg[blue]%}${AWS_VAULT}%{$reset_color%}:%~ $ "
 fi
 export PATH="/usr/local/opt/bison/bin:$PATH"
+
