@@ -78,7 +78,7 @@ local on_attach = function(client, bufnr)
 end
 
 nvim_lsp.solargraph.setup{
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
   autoformat = true,
   diagnostics = true,
   formatting = true,
@@ -102,9 +102,9 @@ end
 
 -- rust lsp
 nvim_lsp.rust_analyzer.setup({
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  capabilities = require('cmp_nvim_lsp').default_capabilities()
 })
 
 nvim_lsp.elmls.setup({
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
   root_dir = require("lspconfig.util").root_pattern('hubtran/hubtran-web/client/elm/accounts-payable/elm.json')})

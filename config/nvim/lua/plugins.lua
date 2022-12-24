@@ -88,6 +88,9 @@ return require("packer").startup(function()
    use 'tpope/vim-fugitive'
    use 'tpope/vim-git'
    use 'tpope/vim-rhubarb' -- For :Gbrowse
+-- gist 
+  use 'mattn/webapi-vim'
+  use 'mattn/vim-gist'
 -- Plug 'tpope/vim-repeat'
 
 -- solidity
@@ -96,4 +99,5 @@ return require("packer").startup(function()
   use 'editorconfig/editorconfig-vim'
   use 'vimwiki/vimwiki'
   use 'elmcast/elm-vim'
+
 end)
