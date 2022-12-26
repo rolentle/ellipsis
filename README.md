@@ -35,3 +35,12 @@ In the past I have used [vim-plug](https://github.com/junegunn/vim-plug), which 
 [] Deep LSP/Completion
 
 [] Deep dive galaxyline
+
+[] Review Primeagen video
+
+  [] https://www.youtube.com/watch?v=w7i4amO_zaE
+  [] https://github.com/ThePrimeagen/init.lua
+  
+[] Review TJ video
+
+  [] https://www.youtube.com/watch?v=stqUbv-5u2s
