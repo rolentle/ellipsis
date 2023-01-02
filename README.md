@@ -34,13 +34,13 @@ In the past I have used [vim-plug](https://github.com/junegunn/vim-plug), which 
 
 [] Deep LSP/Completion
 
-[] Deep dive galaxyline
+[x] Deep dive galaxyline -> switched lualine
 
-[] Review Primeagen video
+[x] Review Primeagen video
 
-  [] https://www.youtube.com/watch?v=w7i4amO_zaE
-  [] https://github.com/ThePrimeagen/init.lua
+  [x] https://www.youtube.com/watch?v=w7i4amO_zaE
+  [x] https://github.com/ThePrimeagen/init.lua
   
-[] Review TJ video
+[x] Review TJ video
 
-  [] https://www.youtube.com/watch?v=stqUbv-5u2s
+  [x] https://www.youtube.com/watch?v=stqUbv-5u2s
