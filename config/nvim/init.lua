@@ -229,7 +229,7 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'ruby', 'typescript', 'help', 'vim' },
+  ensure_installed = { 'lua', 'python', 'rust', 'ruby', 'typescript', 'help', 'vim', 'javascript', 'make', 'markdown', 'json', 'html', 'elm' },
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
@@ -434,3 +434,9 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Rolen stuff
+-- vimwiki
+vim.g.vimwiki_list = { {['path'] = '~/rolens_notes/', ['syntax'] = 'markdown', ['ext'] = '.md'}}
+
+vim.keymap.set('n', '<leader>nt', require('nvim-tree.api').tree.toggle, { desc = '[N]eovim [T]ree' })
